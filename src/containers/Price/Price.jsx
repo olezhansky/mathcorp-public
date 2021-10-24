@@ -17,7 +17,7 @@ const Price = () => {
                     </div>
                     <p className={classes.Text} data-aos="zoom-in">{t('price.text')}</p>
                     <div className={classes.Content}>
-                        <div className={`${classes.ContentItem} ${classes.ContentItemBefore}`} data-aos="fade-up-right">
+                        <div className={`${classes.ContentItem} ${classes.ContentItemBefore}`} data-aos="fade-left">
                             <img src={priceImg1} alt="img"/>  
                             <p className={classes.ContentItemText}>{t('price.contentItemText1')}</p>  
                             <p className={classes.ContentItemSubtext}>{t('price.contentItemSubtext')}</p>   
@@ -25,7 +25,7 @@ const Price = () => {
                                 <MyButton variant="contained">{t('price.button')}</MyButton>      
                             </div>  
                         </div>
-                        <div className={classes.ContentItem} data-aos="fade-up-left">
+                        <div className={classes.ContentItem} data-aos="fade-right">
                             <img src={priceImg2} alt="img"/>  
                             <p className={classes.ContentItemText}>{t('price.contentItemText2')}</p>  
                             <p className={classes.ContentItemSubtext}>{t('price.contentItemSubtext')}</p>   

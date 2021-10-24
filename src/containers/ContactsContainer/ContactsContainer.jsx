@@ -70,8 +70,6 @@ const ContactsContainer = () => {
                     </div>
                     <div 
                         className={classes.Maps} 
-                        data-aos="zoom-in-up"  
-                        data-aos-duration="2000"
                     >
                         {state === 'livoberezhna' && <MapLivoberezhna />}  
                         {state === 'lukianivska' && <MapLukianivska />}  

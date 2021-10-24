@@ -12,7 +12,7 @@ const Reviews = () => {
                 <div className={classes.Title}>
                     <Title title={t('reviews.title')}/>    
                 </div>
-                <div className={classes.Reviews} data-aos="zoom-in">
+                <div className={classes.Reviews}>
                     <ReviewsCarousel />
                     <div className={classes.Link}>
                         <a 

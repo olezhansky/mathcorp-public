@@ -62,8 +62,14 @@
         border-right: 1px solid #013D48;
         border-bottom: 1px solid #013D48;
         z-index: -5;
-        @media (max-width: 354px) {
-            top: 168px;
+        @media (max-width: 480px) {
+            top: 125px;
+        }
+        @media (max-width: 365px) {
+            top: 148px;
+        }
+        @media (max-width: 330px) {
+            top: 146px;
         }
     }
     
