@@ -1,0 +1,41 @@
+.Form { 
+    width: 300px;
+    @media (max-width: 360px) {
+      width: 280px;  
+    }
+}
+.TextField {
+    position: relative;
+    margin-bottom: 15px;
+}
+.TextFieldError {
+    top: 50px;
+    position: absolute;
+    color: red;
+    font-size: 14px;
+}
+
+.Button {
+    margin-top: 31px;
+    button {
+        width: 100%;
+        background-color: #8B969C;
+        border: none;
+        color: #FFFFFF;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 12px 70px;
+        &:hover {
+            background-color: #686868;
+        }
+        @media (max-width: 480px) {
+            background-color: #4797C8;  
+            &:hover {
+                background-color: #21587B;
+            }
+        }
+    }
+}
+

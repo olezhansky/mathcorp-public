@@ -1,0 +1,85 @@
+.Modal {
+    position: fixed;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 600;
+    visibility: hidden;
+    opacity: 0;
+}
+.ModalActive {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in-out;
+    max-width: 500px;
+    z-index: 600;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.ModalBody {
+    width: 100%;
+    border-radius: 5px;
+    background: #DEF2FF;
+    padding: 30px 10px 100px 10px;
+    position: relative;
+}
+.Images {
+    text-align: center;
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+.Text {
+    text-align: center;
+}
+.Window {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 14px;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 19px 0px;
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    
+}
+.SubText {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.Line {
+    margin-top: 19px;
+    height: 0.5px;
+    width: 100%;
+    background-color:rgba(60, 60, 67, 0.36)
+}
+.SubText {
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.Button {
+    margin-top: 12px;
+    background: transparent;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4797C8;
+    cursor: pointer;
+    &:hover {
+        color: #33739b;
+    }
+}

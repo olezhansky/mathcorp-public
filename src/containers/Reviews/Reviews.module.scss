@@ -1,0 +1,26 @@
+.Wrapper {
+    padding: 64px 0;
+}
+.Title {
+    text-align: center;
+}
+.Reviews {
+    margin-top: 60px;
+}
+.Link {
+    margin-top: 50px;
+    text-align: right;
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #084D5B;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #084D5B;
+        @media (max-width: 480px) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}

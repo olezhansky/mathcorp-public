@@ -1,0 +1,48 @@
+.Wrapper {
+    padding: 60px 0 30px;
+    @media (max-width: 480px) {
+        padding: 10px 0 30px;
+    }
+}
+.Logo {
+    text-align: center;
+}
+.Text {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+.SocialNetworks {
+    margin: 25px auto 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 130px;
+}
+.SocialNetworksImg {
+    cursor: pointer;
+    transition: .3s ease;
+    img {
+        transition: .5s ease;
+        transform: scale(1);
+        &:hover {
+            transition: .3s ease;
+            transform: scale(1.2);
+        }
+        @media (max-width: 480px) {
+            max-width: 40px;
+        }
+    }
+}
+.Copyright {
+    margin: 38px auto 0;
+    text-align: center;
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
+}

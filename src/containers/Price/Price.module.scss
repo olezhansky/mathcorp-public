@@ -1,0 +1,105 @@
+.Inner {
+    padding: 50px 0;
+}
+.Title {
+    text-align: center;
+    @media (max-width: 480px) {
+        text-align: left;
+    }
+}
+.Text {
+    max-width: 370px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #013D48;
+    margin-top: 15px;
+    @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+}
+.Content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 820px;
+    margin: 50px auto 0;
+    @media (max-width: 768px) {
+        display: block;
+    }
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+}
+.ContentItem {
+    padding: 40px 30px;
+    box-shadow: 0px 2px 12px rgba(39, 49, 230, 0.2);
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    img {
+        height: 210px;
+        max-width: 300px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    @media (max-width: 480px) {
+        img {
+            height: 180px;
+            max-width: 270px;  
+        }
+    }
+    @media (max-width: 360px) {
+        img {
+            height: 150px;
+            max-width: 200px;  
+        }
+    }
+
+}
+.ContentItemBefore {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: url(../../assets/images/price/price-img1-numbers.png);
+        left: 55px;
+        top: 80px;
+    } 
+}
+.ContentItemText {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #120F0F;
+}
+.ContentItemSubtext {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.ContentItemButton {
+    margin-top: 20px;
+    @media (max-width: 480px) {
+        & button {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 385px) {
+        & button {
+            padding: 8px 50px;
+        }
+    }
+}

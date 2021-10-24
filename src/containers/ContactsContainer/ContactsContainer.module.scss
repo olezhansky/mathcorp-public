@@ -1,0 +1,68 @@
+.Wrapper {
+    padding: 120px 20px 20px 20px;
+    max-width: 1160px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        max-width: 100%;
+        margin: 0;
+        padding: 120px 0px 20px 0px;
+    }
+}
+.Title {
+    text-align: center;
+    @media (max-width: 480px) {
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+}
+.Content {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;   
+    }
+}
+.ContactInfoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    p {
+        margin-left: 25px;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+        margin-left: 15px;
+    }
+    @media (max-width: 768px) {
+     padding-left: 20px;
+    }
+}
+.ContactInfoItemName {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    cursor: pointer;
+    @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.ContactInfoItemNameActive {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #4797C8;
+    @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.Maps {
+    
+}

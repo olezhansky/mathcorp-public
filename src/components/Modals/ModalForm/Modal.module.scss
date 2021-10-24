@@ -1,0 +1,99 @@
+.Modal {
+    position: fixed;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 600;
+    visibility: hidden;
+    opacity: 0;
+}
+.ModalActive {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in-out;
+    max-width: 750px;
+    z-index: 600;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.ModalBody {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    @media (max-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @media (max-width: 480px) {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+.ModalTop {
+    display: flex;
+    justify-content: flex-end;
+}
+.CloseImg {
+    cursor: pointer;
+}
+.ContentLeft {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.Content {
+    margin-top: 10px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+.Text {
+    max-width: 340px;
+    text-align: center;
+    border: 1px solid #013D48;
+    padding: 40px 45px;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #fff;
+    position: relative;
+    z-index: 50;
+    span {
+        font-weight: 700;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        left: 150px;
+        margin: auto;
+        top: 147px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        height: 40px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        border-right: 1px solid #013D48;
+        border-bottom: 1px solid #013D48;
+        z-index: -5;
+    }
+    
+}
+.Images {
+    margin-top: 20px;
+    margin-left: 130px;
+}

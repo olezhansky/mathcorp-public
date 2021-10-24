@@ -1,0 +1,97 @@
+.Wrapper {
+    background-color: #DEF2FF;
+    padding: 60px 0;
+    @media (max-width: 480px) {
+        background-color: #fff;
+    }
+}
+.Inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+.Content {
+    @media (max-width: 768px) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+}
+.Text {
+    max-width: 340px;
+    text-align: center;
+    border: 1px solid #013D48;
+    padding: 40px 45px;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #fff;
+    position: relative;
+    z-index: 50;
+    @media (max-width: 480px) {
+        padding: 40px 45px; 
+        font-size: 14px;
+        line-height: 22px;
+    }
+    span {
+        font-weight: 700;
+        @media (max-width: 480px) {
+            color: #4797C8;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        left: 150px;
+        margin: auto;
+        top: 147px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        height: 40px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        border-right: 1px solid #013D48;
+        border-bottom: 1px solid #013D48;
+        z-index: -5;
+        @media (max-width: 354px) {
+            top: 168px;
+        }
+    }
+    
+}
+.Images {
+    margin-top: 50px;
+    margin-left: 130px;
+    img {
+        @media (max-width: 380px) {
+            max-width: 180px;
+        }
+        @media (max-width: 360px) {
+            max-width: 160px;
+        }
+    }
+    
+}
+
+.Form {
+    padding: 25px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    @media (max-width: 768px) {
+        margin: 0 auto;
+        max-width: 330px;
+    }
+    @media (max-width: 360px) {
+        padding: 25px 0px;
+    }
+}
+    

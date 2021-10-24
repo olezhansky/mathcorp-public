@@ -1,0 +1,28 @@
+.Wrapper {
+    padding: 15px 0;
+}
+.Link {
+    max-width: 1050px;
+    text-align: right;
+    margin-top: 45px;
+    margin-right: 22px;
+    span {
+        font-size: 16px;
+        line-height: 24px;
+        color: #084D5B;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #084D5B;
+        cursor: pointer;
+    }
+    @media (max-width: 480px) {
+        margin-top: 10px;
+        span {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+.Button {
+    text-align: center;
+    margin-top: 34px;
+}

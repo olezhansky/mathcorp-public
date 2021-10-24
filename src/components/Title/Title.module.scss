@@ -1,0 +1,10 @@
+.Title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #013D48;
+    @media (max-width: 480px) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}

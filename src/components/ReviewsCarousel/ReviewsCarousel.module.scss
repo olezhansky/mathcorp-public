@@ -1,0 +1,13 @@
+.Test {
+    display: flex;
+    justify-content: space-between;
+}
+.Slide {
+    cursor: pointer;
+    @media (max-width: 400px) {
+        img {
+            height: 350px;
+            max-width: 280px;
+        }
+    }
+}
