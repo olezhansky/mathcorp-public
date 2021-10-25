@@ -4,4 +4,8 @@
     right: 2%;
     cursor: pointer;
     z-index: 200;
+    @media (max-width: 480px) {
+        top: 87%;
+        right: 3%; 
+    }
 }

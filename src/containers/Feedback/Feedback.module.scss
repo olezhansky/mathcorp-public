@@ -65,6 +65,9 @@
         @media (max-width: 480px) {
             top: 125px;
         }
+        @media (max-width: 380px) {
+            display: none;
+        }
         @media (max-width: 365px) {
             top: 148px;
         }

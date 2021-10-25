@@ -15,7 +15,7 @@ const Price = () => {
                     <div className={classes.Title}>
                         <Title title={t('price.title')}/>
                     </div>
-                    <p className={classes.Text} data-aos="zoom-in">{t('price.text')}</p>
+                    <p className={classes.Text} data-aos="fade-right">{t('price.text')}</p>
                     <div className={classes.Content}>
                         <div className={`${classes.ContentItem} ${classes.ContentItemBefore}`} data-aos="fade-right">
                             <img src={priceImg1} alt="img"/>  
