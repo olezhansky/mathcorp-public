@@ -5,33 +5,22 @@ import { reviews } from '../../data/data'
 
 const ReviewsCarousel = () => {
     const settings = {
-      dots: false,
+      speed: 1500,
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
+      dots: false,
       adaptiveHeight: true,
+      variableWidth: true,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipeToSlide: true,
       arrows: false,
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 5000,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
+      pauseOnHover: true
     };
     return (
       <>
-        <Slider {...settings} className={classes.Test}>
+        <Slider {...settings} className={classes.ReviewsCarousel}>
           {reviews.map((review) => (
             <div className={classes.Slide}>
               <img src={review.img} alt="img" />
