@@ -26,9 +26,9 @@ const Teachers = ({numSlice}) => {
                                 <img src={starIcon} alt="img"/>
                                 <img src={starIcon} alt="img"/>
                             </div> */}
-                            <p className={classes.ListItemSpecialization}>Спеціалізація: <span>{t(teacher.specialization)}</span></p>
-                            <p className={classes.ListItemExperience}>Досвід: <span>{t(teacher.experience)}</span></p>
-                            <p className={classes.ListItemEducation}>Освіта: <span>{t(teacher.education)}</span></p>
+                            <p className={classes.ListItemSpecialization}>{t('teachers.specialization')}: <span>{t(teacher.specialization)}</span></p>
+                            <p className={classes.ListItemExperience}>{t('teachers.experience')}: <span>{t(teacher.experience)}</span></p>
+                            <p className={classes.ListItemEducation}>{t('teachers.education')}: <span>{t(teacher.education)}</span></p>
                         </div>
                     </li>
                 ))}

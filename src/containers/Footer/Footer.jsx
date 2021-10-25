@@ -28,7 +28,7 @@ const Footer = () => {
                 >
                     <a 
                         rel="noreferrer"
-                        href="https://www.instagram.com/math.corporation/?utm_medium=copy_link" 
+                        href="https://m.facebook.com/pg/math.corporation.kyiv/reviews/?ref=page_internal&mt_nav=0" 
                         target="_blank" 
                         className={classes.SocialNetworksImg}
                     >

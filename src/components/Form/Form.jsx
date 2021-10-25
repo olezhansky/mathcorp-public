@@ -63,7 +63,7 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.name}</div>
           ) : null}
         </div>
-        <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1500">
+        <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1300">
           <TextField
             id="phone"
             label={t('form.phone')} 
@@ -82,7 +82,7 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.phone}</div>
           ) : null}
         </div>
-        <div className={classes.TextField} data-aos="fade-up" data-aos-duration="2000">
+        <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1600">
             <TextField
               SelectProps={{ MenuProps: { disableScrollLock: true } }}
               select
@@ -106,7 +106,7 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.selectClass}</div>
           ) : null}
           </div>
-        <div className={classes.TextField} data-aos="fade-up" data-aos-duration="2500">
+        <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1900">
             <TextField
               SelectProps={{ MenuProps: { disableScrollLock: true } }}
               select
@@ -130,7 +130,7 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.district}</div>
           ) : null}
           </div>
-          <div className={classes.TextField} data-aos="fade-up" data-aos-duration="3000">
+          <div className={classes.TextField} data-aos="fade-up" data-aos-duration="2200">
             <TextField
               SelectProps={{ MenuProps: { disableScrollLock: true } }}
               select
@@ -154,7 +154,7 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.typeOfStudy}</div>
           ) : null}
           </div>
-          <div className={classes.Button} data-aos="fade-up" data-aos-duration="3000">
+          <div className={classes.Button} data-aos="fade-up" data-aos-duration="2500">
             <Button variant="outlined" type="submit">{t('form.button')}</Button>
           </div>
       </form>

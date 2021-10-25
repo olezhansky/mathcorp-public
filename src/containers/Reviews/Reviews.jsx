@@ -20,7 +20,7 @@ const Reviews = () => {
                             rel="noreferrer"
                             target="_blank"
                         >
-                            Переглянути Google відгуки
+                            {t('reviews.googleReviews')}
                             </a>
                     </div>
                 </div>
