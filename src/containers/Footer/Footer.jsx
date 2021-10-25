@@ -43,15 +43,8 @@ const Footer = () => {
                         <img src={instagramImg} alt="img"/>
                     </a>
                 </div>
-                <p className={classes.Text}
-                     data-aos="fade-right"
-
-                     data-aos-duration="1500"
-                >{t('footer.subText')}</p>
-                <div className={classes.Copyright}
-                     data-aos="fade-right"
-                     data-aos-duration="2000"
-                >
+                <p className={classes.SubText} data-aos="fade-right">{t('footer.subText')}</p>
+                <div className={classes.Copyright} data-aos="fade-right">
                     <p> &#169;Copyright 2021. {t('footer.copyright')}</p>
                 </div>
             </div>

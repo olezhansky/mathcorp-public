@@ -23,6 +23,10 @@
     display: flex;
     justify-content: space-between;
     max-width: 130px;
+    @media (max-width: 480px) {
+        max-width: 100px;
+        margin: 15px auto 0;
+    }
 }
 .SocialNetworksImg {
     cursor: pointer;
@@ -39,10 +43,23 @@
         }
     }
 }
+.SubText {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    @media (max-width: 480px) {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 19px;
+    } 
+}
 .Copyright {
     margin: 38px auto 0;
     text-align: center;
     @media (max-width: 480px) {
+        margin: 25px auto 0;
         font-size: 14px;
     }
 }

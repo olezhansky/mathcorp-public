@@ -53,11 +53,11 @@ import review6 from '../assets/images/reviews/review6.png';
 
 export const whyData = [
     {id: 1, title: 'why.why1', img: why1, aos: "fade-right", aosMobile: "fade-right", durationMobile: '1000'},
-    {id: 2, title: 'why.why2', img: why2, aos: "zoom-in", aosMobile: "fade-right", durationMobile: '1400'},
-    {id: 3, title: 'why.why3', img: why3, aos: "fade-left", aosMobile: "fade-right", durationMobile: '1800'},
-    {id: 4, title: 'why.why4', img: why4, aos: "fade-right", aosMobile: "fade-right", durationMobile: '2200'},
-    {id: 5, title: 'why.why5', img: why5, aos: "zoom-in", aosMobile: "fade-right", durationMobile: '2600'},
-    {id: 6, title: 'why.why6', img: why6, aos: "fade-left", aosMobile: "fade-right", durationMobile: '3000'},
+    {id: 2, title: 'why.why2', img: why2, aos: "zoom-in", aosMobile: "fade-right", durationMobile: '1000'},
+    {id: 3, title: 'why.why3', img: why3, aos: "fade-left", aosMobile: "fade-right", durationMobile: '1000'},
+    {id: 4, title: 'why.why4', img: why4, aos: "fade-right", aosMobile: "fade-right", durationMobile: '1000'},
+    {id: 5, title: 'why.why5', img: why5, aos: "zoom-in", aosMobile: "fade-right", durationMobile: '1000'},
+    {id: 6, title: 'why.why6', img: why6, aos: "fade-left", aosMobile: "fade-right", durationMobile: '1000'},
 ]
 
 export const howJoinData = [
