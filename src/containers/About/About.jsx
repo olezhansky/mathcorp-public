@@ -12,11 +12,11 @@ const About = () => {
         <div className={classes.Wrapper}>
             <div className="container">
                 <div className={classes.Inner}>
-                    <div className={classes.Content}>
-                        <h1 className={classes.Title} data-aos="fade-right">{t('about.title')}</h1>
-                        <p className={classes.Text} data-aos="fade-right" data-aos-duration="1500">{t('about.text')}</p>
-                        <p className={classes.Subtext} data-aos="fade-right" data-aos-duration="2000">{t('about.subtext')}</p>
-                        <div className={classes.Button} data-aos="fade-right" data-aos-duration="2500">
+                    <div className={classes.Content} data-aos="fade-right">
+                        <h1 className={classes.Title} >{t('about.title')}</h1>
+                        <p className={classes.Text}>{t('about.text')}</p>
+                        <p className={classes.Subtext}>{t('about.subtext')}</p>
+                        <div className={classes.Button}  >
                             <MyButton variant="contained">{t('general.button')}</MyButton>
                         </div>
                     </div>

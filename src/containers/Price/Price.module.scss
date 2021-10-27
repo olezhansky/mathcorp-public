@@ -1,5 +1,8 @@
 .Inner {
     padding: 50px 0;
+    @media (max-width: 480px) {
+        padding: 30px 0;
+    }
 }
 .Title {
     text-align: center;
@@ -95,6 +98,7 @@
     @media (max-width: 480px) {
         & button {
             font-size: 14px;
+            width: 100%;
         }
     }
     @media (max-width: 385px) {

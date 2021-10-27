@@ -53,13 +53,13 @@ const FormComponent = props => {
               label={t('form.name')} 
               value={values.name}
               onChange={handleChange}
-              onBlur={handleBlur}
+              // onBlur={handleBlur}
               // helperText={touched.name ? errors.name : ""}
-              error={touched.name && Boolean(errors.name)}
+              // error={touched.name && Boolean(errors.name)}
               margin="dense"
               variant="outlined"
             />
-             {errors.name  ? (
+             {touched.name  ? (
             <div className={classes.TextFieldError}>{errors.name}</div>
           ) : null}
         </div>
@@ -71,14 +71,14 @@ const FormComponent = props => {
             placeholder='+380(067)2345678'
             value={values.phone}
             onChange={handleChange}
-            onBlur={handleBlur}
+            // onBlur={handleBlur}
             // helperText={touched.phone ? errors.phone : ""}
-            error={touched.phone && Boolean(errors.phone)}
+            // error={touched.phone && Boolean(errors.phone)}
             margin="dense"
             variant="outlined"
             fullWidth
           />
-           {errors.phone  ? (
+           {touched.phone  ? (
             <div className={classes.TextFieldError}>{errors.phone}</div>
           ) : null}
         </div>
@@ -91,7 +91,7 @@ const FormComponent = props => {
               value={values.selectClass}
               onChange={handleChange("selectClass")}
               // helperText={touched.selectClass ? errors.selectclass : ""}
-              error={touched.selectClass && Boolean(errors.selectClass)}
+              // error={touched.selectClass && Boolean(errors.selectClass)}
               margin="dense"
               variant="outlined"
               fullWidth
@@ -102,7 +102,7 @@ const FormComponent = props => {
                 </MenuItem>
               ))}
             </TextField>
-            {errors.selectClass  ? (
+            {touched.selectClass  ? (
             <div className={classes.TextFieldError}>{errors.selectClass}</div>
           ) : null}
           </div>
@@ -115,7 +115,7 @@ const FormComponent = props => {
               value={values.district}
               onChange={handleChange("district")}
               // helperText={touched.district ? errors.district : ""}
-              error={touched.district && Boolean(errors.district)}
+              // error={touched.district && Boolean(errors.district)}
               margin="dense"
               variant="outlined"
               fullWidth
@@ -126,7 +126,7 @@ const FormComponent = props => {
                 </MenuItem>
               ))}
             </TextField>
-            {errors.district  ? (
+            {touched.district  ? (
             <div className={classes.TextFieldError}>{errors.district}</div>
           ) : null}
           </div>
@@ -139,7 +139,7 @@ const FormComponent = props => {
               value={values.typeOfStudy}
               onChange={handleChange("typeOfStudy")}
               // helperText={touched.typeOfStudy ? errors.typeOfStudy : ""}
-              error={touched.typeOfStudy && Boolean(errors.typeOfStudy)}
+              // error={touched.typeOfStudy && Boolean(errors.typeOfStudy)}
               margin="dense"
               variant="outlined"
               fullWidth
@@ -150,7 +150,7 @@ const FormComponent = props => {
                 </MenuItem>
               ))}
             </TextField>
-            {errors.typeOfStudy  ? (
+            {touched.typeOfStudy  ? (
             <div className={classes.TextFieldError}>{errors.typeOfStudy}</div>
           ) : null}
           </div>
@@ -170,11 +170,11 @@ const Form = withFormik({
     typeOfStudy,
   }) => {
     return {
-      name: name || "",
-      phone: phone || "",
-      selectClass: selectClass || "",
-      district: district || "",
-      typeOfStudy: typeOfStudy || ""
+      name: name,
+      phone: phone,
+      selectClass: selectClass,
+      district: district,
+      typeOfStudy: typeOfStudy
     };
   },
 

@@ -32,7 +32,7 @@
     @media (max-width: 480px) {
         margin-top: 43px;
         grid-template-columns: 1fr;  
-        grid-row-gap: 50px;
+        grid-row-gap: 40px;
     }
 }
 .Item {
@@ -56,7 +56,7 @@
        max-width: 100%;
        display: grid; 
        align-items: center;
-       grid-template-columns: 15% 85%;
+       grid-template-columns: 17% 83%;
        margin: 0;
        text-align: left;
        img {

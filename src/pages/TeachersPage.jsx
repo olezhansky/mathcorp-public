@@ -16,7 +16,9 @@ const TeachersPage = () => {
     
     return (
         <div className={classes.TeachersPage}>
-            <Teachers numSlice={7}/>
+            <div className="container">
+                <Teachers numSlice={7}/>
+            </div>
         </div>
     )
 }

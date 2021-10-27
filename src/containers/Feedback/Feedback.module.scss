@@ -21,20 +21,40 @@
       margin: 0 auto;
     }
 }
+.OvalText {
+    position: relative;
+    img {
+        @media (max-width: 330px) {
+            max-width: 270px;
+        }
+    }
+}
 .Text {
+    position: absolute;
+    top: -3%;
+    left: 4.5%;
     max-width: 340px;
     text-align: center;
-    border: 1px solid #013D48;
     padding: 40px 45px;
     border-radius: 50%;
     font-size: 16px;
     line-height: 22px;
-    background-color: #fff;
-    position: relative;
     z-index: 50;
+    @media (max-width: 768px) {
+        left: -5px;
+        top: -8%;
+    }
     @media (max-width: 480px) {
-        padding: 40px 45px; 
+        left: -5px;
         font-size: 14px;
+        line-height: 22px;
+    }
+    @media (max-width: 330px) {
+        max-width: 260px;
+        padding: 40px 10px;
+        top: -10%;
+        left: 3%;
+        font-size: 12px;
         line-height: 22px;
     }
     span {
@@ -43,66 +63,31 @@
             color: #4797C8;
         }
     }
-    &::after {
-        content: '';
-        position: absolute;
-        width: 40px;
-        left: 150px;
-        margin: auto;
-        top: 147px;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        height: 40px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        border-right: 1px solid #013D48;
-        border-bottom: 1px solid #013D48;
-        z-index: -5;
-        @media (max-width: 480px) {
-            top: 125px;
-        }
-        @media (max-width: 380px) {
-            display: none;
-        }
-        @media (max-width: 365px) {
-            top: 148px;
-        }
-        @media (max-width: 330px) {
-            top: 146px;
-        }
-    }
-    
 }
 .Images {
     margin-top: 50px;
     margin-left: 130px;
-    @media (max-width: 480px) {
-        margin-top: 15px;
+    position: relative;
+    z-index: 10;
+    @media (max-width: 768px) {
+        margin-top: 0px;
     }
     @media (max-width: 480px) {
-        margin-left: 60px;   
+        margin-left: 80px;   
     }  
 }
-
 .Form {
-    padding: 25px 15px;
-    background-color: #fff;
     border-radius: 10px;
     @media (max-width: 768px) {
-        margin: 0 auto;
+        margin: -15px auto 0;
         max-width: 330px;
     }
-    @media (max-width: 480px) {
-        margin: 0 auto;
-        padding: 0px 15px;
-        max-width: 330px;
-    }
+    // @media (max-width: 480px) {
+    //     padding: 0px 15px;
+    //     max-width: 330px;
+    // }
     @media (max-width: 360px) {
-        padding: 25px 0px;
+        // padding: 25px 0px;
     }
 }
     
