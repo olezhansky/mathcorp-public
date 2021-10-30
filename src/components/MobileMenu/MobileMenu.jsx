@@ -7,7 +7,7 @@ import { setLanguage, setRoutePathAction } from '../../store/actions/settingsAct
 import MyButton from '../UI/Button/MyButton';
 import classes from './MobileMenu.module.scss'
 
-const MobileMenu = ({state, onToggle}) => {
+const MobileMenu = ({mobileMenu, onToggle}) => {
     const { t } = useTranslation();
     const dispatch = useDispatch()
     const router = useHistory()
@@ -16,13 +16,12 @@ const MobileMenu = ({state, onToggle}) => {
         onToggle()
         dispatch(setRoutePathAction(router.location.pathname))
     }
-
     const language = useSelector((state) => state.settingsReducer.language)
     const handleChangeLanguage = (e) => {
         dispatch(setLanguage(e.target.value))
     }
     return (
-        <div className={state ? classes.WrapperActive : classes.Wrapper}>
+        <div className={mobileMenu ? classes.WrapperActive : classes.Wrapper}>
             <ul className={classes.List}>
                 <li onClick={handleClick} className={classes.Item}>
                     <NavLink className={routePath === '/' ? classes.linkActive : classes.link} to='/'>

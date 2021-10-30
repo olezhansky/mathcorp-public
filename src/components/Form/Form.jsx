@@ -168,9 +168,9 @@ const Form = withFormik({
     selectClass,
   }) => {
     return {
-      name: name,
-      phone: phone,
-      selectClass: selectClass,
+      name: name || "",
+      phone: phone || "",
+      selectClass: selectClass || "",
     };
   },
 
@@ -179,9 +179,9 @@ const Form = withFormik({
   handleSubmit: (values, {resetForm}) => {
       sendMessageTotelegram(`Ім'я: ${values.name}, телефон: ${values.phone}, клас: ${values.selectClass}`)
       store.dispatch(setUserNameAction(values.name))
-      resetForm()
       store.dispatch(openModalConfirmAction())
       store.dispatch(closeModalAction())
+      resetForm()
   }
 })(FormComponent);
 

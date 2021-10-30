@@ -2,7 +2,7 @@ import React from 'react'
 import images from '../../../assets/images/common/orderConfirm.png'
 import classes from './ModalConfirm.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
-import { closeModalConfirmAction } from '../../../store/actions/settingsActions'
+import { closeMobileMenuAction, closeModalConfirmAction } from '../../../store/actions/settingsActions'
 import { useTranslation } from 'react-i18next'
 import BackdropConfirm from '../../UI/BackdropConfirm/BackdropConfirm'
 
@@ -13,6 +13,7 @@ const ModalConfirm = () => {
     const userName = useSelector((state) => state.settingsReducer.userName)
     const handleClick = () => {
         dispatch(closeModalConfirmAction())
+        dispatch(closeMobileMenuAction())
     }
     return (
         <>

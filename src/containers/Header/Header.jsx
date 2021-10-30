@@ -3,7 +3,7 @@ import Menu from '../../components/Menu/Menu'
 import classes from './Header.module.scss'
 import {MenuItem, Select  } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import { setLanguage } from '../../store/actions/settingsActions';
+import { closeMobileMenuAction, setLanguage, toggleMobileMenuAction } from '../../store/actions/settingsActions';
 import { useTranslation } from 'react-i18next';
 import MyButton from '../../components/UI/Button/MyButton';
 import Logo from '../../components/Logo/Logo';
@@ -12,18 +12,18 @@ import MobileMenu from '../../components/MobileMenu/MobileMenu';
 const Header = () => {
     const { t } = useTranslation();
     const dispatch = useDispatch();
-    const [state, setState] = useState(false)
-    const language = useSelector((state) => state.settingsReducer.language)
+    const {language, mobileMenu} = useSelector((state) => state.settingsReducer)
+
     const handleChangeLanguage = (e) => {
         dispatch(setLanguage(e.target.value))
     }
 
     const handleClick = () => {
-        setState((state) => !state)
+        dispatch(toggleMobileMenuAction())
     }
 
     const handleCloseMobileMenu = () => {
-        setState(false) 
+        dispatch(closeMobileMenuAction())
     }
 
     return (
@@ -53,12 +53,12 @@ const Header = () => {
                     </div>
                     <div className={classes.MenuSelectButtonMobileWrapper}>
                         <div className={classes.MenuSelectButtonMobile} onClick={handleClick}>
-                            <div className={state ? classes.MenuLineTopTransform : classes.MenuLineTop}></div>
-                            <div className={state ? classes.MenuLineCenterTransform : classes.MenuLineCenter}></div>
-                            <div className={state ? classes.MenuLineBottomTransform : classes.MenuLineBottom}></div>
+                            <div className={mobileMenu ? classes.MenuLineTopTransform : classes.MenuLineTop}></div>
+                            <div className={mobileMenu ? classes.MenuLineCenterTransform : classes.MenuLineCenter}></div>
+                            <div className={mobileMenu ? classes.MenuLineBottomTransform : classes.MenuLineBottom}></div>
                         </div>
                     </div>
-                    <MobileMenu state={state} onToggle={handleClick}/>
+                    <MobileMenu mobileMenu={mobileMenu} onToggle={handleClick}/>
                 </div>
             </div>
         </div>

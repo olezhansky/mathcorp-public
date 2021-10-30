@@ -4,6 +4,7 @@ const initialState = {
   language: 'UA', // RU
   modal: false,
   modalConfirm: false,
+  mobileMenu: false,
   userName: '',
   routePath: '/'
 };
@@ -58,6 +59,24 @@ const settingsReducer = (state = initialState, action) => {
       return {
         ...state,
         routePath: action.payload
+      }
+    }
+    case ACTION.TOGGLE_MOBILE_MENU: {
+      return {
+        ...state,
+        mobileMenu: !state.mobileMenu
+      }
+    }
+    case ACTION.CLOSE_MOBILE_MENU: {
+      return {
+        ...state,
+        mobileMenu: false
+      }
+    }
+    case ACTION.OPEN_MOBILE_MENU: {
+      return {
+        ...state,
+        mobileMenu: true
       }
     }
     default:
