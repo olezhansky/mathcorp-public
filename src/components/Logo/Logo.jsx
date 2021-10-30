@@ -29,8 +29,9 @@ const Logo = ({closeMobileMenu}) => {
 
     return (
         <div className={classes.Logo} onClick={handleClick}>
-            {tabletMatch &&  <img src={logo} alt="img"/>}
-            {mobileMatch && !tabletMatch && <img src={logoMobile} alt="img"/>}
+            <img src={logo} alt="img"/>
+            {/* {tabletMatch &&  <img src={logo} alt="img"/>}
+            {mobileMatch && !tabletMatch && <img src={logoMobile} alt="img"/>} */}
         </div>
     )
 }

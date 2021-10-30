@@ -15,6 +15,10 @@
     @media (max-width: 768px) {
         display: block;
     }
+    @media (max-width: 480px) {
+        padding-bottom: 5px;
+    }
+
 }
 .Content {
     margin-right: 60px;
