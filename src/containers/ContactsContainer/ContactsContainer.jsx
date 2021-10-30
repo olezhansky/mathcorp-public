@@ -69,7 +69,7 @@ const ContactsContainer = () => {
                             <img src={phoneImg} alt="img"/>
                             <a href="tel: +38(063)-972-51-07">+38(063)-972-51-07</a>
                         </div>
-                        <div className={classes.SocialNetworks}>
+                        <div className={classes.SocialNetworks} data-aos="fade-right" data-aos-duration="2000">
                             <a  
                                 rel="noreferrer"
                                 href="https://m.facebook.com/pg/math.corporation.kyiv/reviews/?ref=page_internal&mt_nav=0" 

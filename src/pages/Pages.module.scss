@@ -1,5 +1,8 @@
 .TeachersPage {
     padding: 120px 0px 0px 0px;
+    @media (max-width: 480px) {
+        padding: 95px 0 0px;
+    }
 }
 .ErrorPage {
     padding: 120px 0px 0px 0px;

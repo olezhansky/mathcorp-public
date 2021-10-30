@@ -31,7 +31,7 @@ const HowJoin = () => {
                           </li>
                       ))}
                     </ul>
-                    <div className={classes.Button} data-aos="flip-left">
+                    <div className={classes.Button}>
                         <MyButton variant="contained">{t('general.button')}</MyButton>
                     </div>
                 </div>

@@ -7,6 +7,9 @@
         margin: 0;
         padding: 120px 0px 20px 0px;
     }
+    @media (max-width: 480px) {
+        padding: 95px 0 0px;
+    }
 }
 .Title {
     text-align: center;
@@ -23,6 +26,9 @@
     align-items: center;
     @media (max-width: 768px) {
         grid-template-columns: 1fr;   
+    }
+    @media (max-width: 480px) {
+        margin-top: 35px;
     }
 }
 .ContactInfoItem {
