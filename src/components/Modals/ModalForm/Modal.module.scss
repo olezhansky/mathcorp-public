@@ -109,7 +109,9 @@
         &::after {
             content: '';
             position: absolute;
-            width: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
             height: 160px;
             background-image: url(../../../assets/images/feedback/feedback-img-mobile.png);
             background-repeat: no-repeat;

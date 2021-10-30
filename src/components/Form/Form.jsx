@@ -166,22 +166,18 @@ const Form = withFormik({
     name,
     phone,
     selectClass,
-    district,
-    typeOfStudy,
   }) => {
     return {
       name: name,
       phone: phone,
       selectClass: selectClass,
-      district: district,
-      typeOfStudy: typeOfStudy
     };
   },
 
   validationSchema: yup.object().shape(validationsForm),
 
   handleSubmit: (values, {resetForm}) => {
-      sendMessageTotelegram(`Ім'я: ${values.name}, телефон: ${values.phone}, клас: ${values.selectClass}, район: ${values.district}, тип занять: ${values.typeOfStudy}`)
+      sendMessageTotelegram(`Ім'я: ${values.name}, телефон: ${values.phone}, клас: ${values.selectClass}`)
       store.dispatch(setUserNameAction(values.name))
       resetForm()
       store.dispatch(openModalConfirmAction())

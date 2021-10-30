@@ -7,8 +7,8 @@ const validationsForm = {
   name: yup.string().required(i18n.t('form.errorName')),
   phone: yup.number().typeError(i18n.t('form.errorPhoneCorrect')).required(i18n.t('form.errorPhone')),
   selectClass: yup.string().required(i18n.t('form.errorSelect')),
-  district: yup.string().required(i18n.t('form.errorSelect')),
-  typeOfStudy: yup.string().required(i18n.t('form.errorSelect')),
+  // district: yup.string().required(i18n.t('form.errorSelect')),
+  // typeOfStudy: yup.string().required(i18n.t('form.errorSelect')),
 };
 
 export default validationsForm;
