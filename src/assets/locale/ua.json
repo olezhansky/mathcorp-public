@@ -110,7 +110,7 @@
             "typeOfStudy": "Вид занять",
             "errorName": "Введіть Ваше ім'я",
             "errorPhone": "Введіть номер телефона",
-            "errorPhoneCorrect": "Введіть коректний номер телефона",
+            "errorPhoneCorrect": "Некоректний номер",
             "errorSelect": "Виберіть один із варіантів",
             "optionDistrictLukianivska": "Лук'янівка",
             "optionDistrictLivoberezhna": "Лівобережна",

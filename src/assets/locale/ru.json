@@ -110,7 +110,7 @@
             "typeOfStudy": "Вид занятий",
             "errorName": "Введите имя",
             "errorPhone": "Введите номер телефона",
-            "errorPhoneCorrect": "Введите корректный номер телефона",
+            "errorPhoneCorrect": "Некорректный номер",
             "errorSelect": "Выберите один из вариантов",
             "optionDistrictLukianivska": "Лукьяновка",
             "optionDistrictLivoberezhna": "Левобережная",
