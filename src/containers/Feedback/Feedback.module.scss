@@ -3,19 +3,21 @@
     padding: 60px 0;
     @media (max-width: 480px) {
         background-color: #fff;
+        padding: 0;
     }
 }
 .Inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 770px;
     margin: 0 auto;
     @media (max-width: 768px) {
         display: block;
     }
 }
 .Content {
+    margin-right: 60px;
     @media (max-width: 768px) {
       max-width: 400px;
       margin: 0 auto;
@@ -77,6 +79,7 @@
     }  
 }
 .Form {
+    flex: 1 1 auto;
     border-radius: 10px;
     @media (max-width: 768px) {
         margin: -15px auto 0;

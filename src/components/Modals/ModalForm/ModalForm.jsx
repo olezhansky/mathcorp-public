@@ -33,7 +33,7 @@ const Modal = () => {
                                 <img src={img} alt="img"/>
                             </div>
                         </div>
-                        <div>
+                        <div className={classes.Form}>
                             <Form />
                         </div>
                     </div>

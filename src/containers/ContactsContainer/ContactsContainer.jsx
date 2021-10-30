@@ -3,6 +3,8 @@ import Title from '../../components/Title/Title'
 import locationImg from '../../assets/images/contacts/location.png'
 import emailImg from '../../assets/images/contacts/email.png'
 import phoneImg from '../../assets/images/contacts/phone.png'
+import facebookImg from '../../assets/images/footer/facebook.png'
+import instagramImg from '../../assets/images/footer/instagram.png'
 import classes from './ContactsContainer.module.scss'
 import MapLivoberezhna from '../../components/Maps/MapLivoberezhna/MapLivoberezhna'
 import MapLukianivska from '../../components/Maps/MapLukianivska/MapLukianivska'
@@ -66,6 +68,21 @@ const ContactsContainer = () => {
                         >
                             <img src={phoneImg} alt="img"/>
                             <a href="tel: +38(063)-972-51-07">+38(063)-972-51-07</a>
+                        </div>
+                        <div className={classes.SocialNetworks}>
+                            <a  
+                                rel="noreferrer"
+                                href="https://m.facebook.com/pg/math.corporation.kyiv/reviews/?ref=page_internal&mt_nav=0" 
+                                target="_blank" className={classes.Facebook}
+                            >
+                                <img src={facebookImg} alt="img"/>
+                            </a>
+                            <a 
+                                rel="noreferrer"
+                                href="https://www.instagram.com/math.corporation/?utm_medium=copy_link" 
+                                target="_blank"  className={classes.SocialNetwork}>
+                                <img src={instagramImg} alt="img"/>
+                            </a>
                         </div>
                     </div>
                     <div 

@@ -10,22 +10,11 @@ const Footer = () => {
     return (
         <div className={classes.Wrapper}>
             <div className="container">
-                <div className={classes.Logo}   
-                    data-aos="fade-right"
-                    data-aos-duration="500"
-                >
+                <div className={classes.Logo}>
                     <Logo />
                 </div>
-                <p className={classes.Text}
-                    data-aos="fade-right"
-                    data-aos-anchor="#example-anchor"
-                    data-aos-offset="500"
-                    data-aos-duration="1000"
-                >{t('footer.text')}</p>
-                <div className={classes.SocialNetworks}
-                     data-aos="fade-right"
-                     data-aos-duration="1500"
-                >
+                <p className={classes.Text}>{t('footer.text')}</p>
+                <div className={classes.SocialNetworks}>
                     <a 
                         rel="noreferrer"
                         href="https://m.facebook.com/pg/math.corporation.kyiv/reviews/?ref=page_internal&mt_nav=0" 
@@ -43,8 +32,8 @@ const Footer = () => {
                         <img src={instagramImg} alt="img"/>
                     </a>
                 </div>
-                <p className={classes.SubText} data-aos="fade-right">{t('footer.subText')}</p>
-                <div className={classes.Copyright} data-aos="fade-right">
+                <p className={classes.SubText}>{t('footer.subText')}</p>
+                <div className={classes.Copyright}>
                     <p> &#169;Copyright 2021. {t('footer.copyright')}</p>
                 </div>
             </div>

@@ -18,17 +18,12 @@ const Teachers = ({numSlice}) => {
                             <div className={classes.ListItemImg}>
                                 <img src={teacher.img} alt="img"/>
                             </div>
-                            <p className={classes.ListItemName}>{t(teacher.name)}, {t(teacher.age)}</p>
-                            {/* <div className={classes.ListItemStar}>
-                                <img src={starIcon} alt="img"/>
-                                <img src={starIcon} alt="img"/>
-                                <img src={starIcon} alt="img"/>
-                                <img src={starIcon} alt="img"/>
-                                <img src={starIcon} alt="img"/>
-                            </div> */}
-                            <p className={classes.ListItemSpecialization}>{t('teachers.specialization')}: <span>{t(teacher.specialization)}</span></p>
-                            <p className={classes.ListItemExperience}>{t('teachers.experience')}: <span>{t(teacher.experience)}</span></p>
-                            <p className={classes.ListItemEducation}>{t('teachers.education')}: <span>{t(teacher.education)}</span></p>
+                            <div className={classes.ListItemText}>
+                                <p className={classes.ListItemName}>{t(teacher.name)}, {t(teacher.age)}</p>
+                                <p className={classes.ListItemSpecialization}>{t('teachers.specialization')}: <span>{t(teacher.specialization)}</span></p>
+                                <p className={classes.ListItemExperience}>{t('teachers.experience')}: <span>{t(teacher.experience)}</span></p>
+                                <p className={classes.ListItemEducation}>{t('teachers.education')}: <span>{t(teacher.education)}</span></p>
+                            </div>
                         </div>
                     </li>
                 ))}

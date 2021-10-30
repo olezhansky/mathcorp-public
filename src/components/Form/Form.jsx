@@ -26,14 +26,14 @@ const FormComponent = props => {
     {value: "11", label: "11"},
   ];
   
-  const optionsDistrict = [
-    {value: "Lukianivska", label: i18n.t('form.optionDistrictLukianivska')},
-    {value: "Livoberezhna", label: i18n.t('form.optionDistrictLivoberezhna')},
-  ];
-  const optionsTypeOfStudy = [
-    {value: "онлайн", label: "онлайн"},
-    {value: "очні", label: "очні"},
-  ];
+  // const optionsDistrict = [
+  //   {value: "Lukianivska", label: i18n.t('form.optionDistrictLukianivska')},
+  //   {value: "Livoberezhna", label: i18n.t('form.optionDistrictLivoberezhna')},
+  // ];
+  // const optionsTypeOfStudy = [
+  //   {value: "онлайн", label: "онлайн"},
+  //   {value: "очні", label: "очні"},
+  // ];
   
   const { t } = useTranslation()
   const {
@@ -41,7 +41,7 @@ const FormComponent = props => {
     touched,
     errors,
     handleChange,
-    handleBlur,
+    // handleBlur,
     handleSubmit,
   } = props;
 
@@ -106,7 +106,7 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.selectClass}</div>
           ) : null}
           </div>
-        <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1900">
+        {/* <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1900">
             <TextField
               SelectProps={{ MenuProps: { disableScrollLock: true } }}
               select
@@ -129,8 +129,8 @@ const FormComponent = props => {
             {touched.district  ? (
             <div className={classes.TextFieldError}>{errors.district}</div>
           ) : null}
-          </div>
-          <div className={classes.TextField} data-aos="fade-up" data-aos-duration="2200">
+          </div> */}
+          {/* <div className={classes.TextField} data-aos="fade-up" data-aos-duration="2200">
             <TextField
               SelectProps={{ MenuProps: { disableScrollLock: true } }}
               select
@@ -153,7 +153,7 @@ const FormComponent = props => {
             {touched.typeOfStudy  ? (
             <div className={classes.TextFieldError}>{errors.typeOfStudy}</div>
           ) : null}
-          </div>
+          </div> */}
           <div className={classes.Button} data-aos="fade-up" data-aos-duration="2500">
             <Button variant="outlined" type="submit">{t('form.button')}</Button>
           </div>

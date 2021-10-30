@@ -1,8 +1,14 @@
 .Wrapper {
     padding: 64px 0;
+    @media (max-width: 480px) {
+        padding: 36px 0 50px;
+    }
 }
 .Title {
     text-align: center;
+    @media (max-width: 480px) {
+        text-align: left;
+    }
 }
 .Reviews {
     margin-top: 60px;

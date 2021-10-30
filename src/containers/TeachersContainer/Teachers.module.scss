@@ -2,10 +2,8 @@
     padding: 15px 0;
 }
 .Link {
-    max-width: 1050px;
     text-align: right;
     margin-top: 45px;
-    margin-right: 22px;
     span {
         font-size: 16px;
         line-height: 24px;
@@ -25,4 +23,9 @@
 .Button {
     text-align: center;
     margin-top: 34px;
+    @media (max-width: 480px) {
+        button {
+            width: 100%;
+        }  
+    }  
 }

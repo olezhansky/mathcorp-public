@@ -23,10 +23,10 @@ const TeachersContainer = () => {
             <div className="container">
                 <div className={classes.Inner}>
                     <Teachers numSlice={3}/>
-                    <div className={classes.Link} data-aos="fade-left">
+                    <div className={classes.Link}>
                         <span onClick={handleClick}>{t('teachers.other_teacher')}</span>
                     </div>
-                    <div className={classes.Button} data-aos="flip-left">
+                    <div className={classes.Button}>
                         <MyButton variant="contained">{t('teachers.button')}</MyButton>    
                     </div>
                 </div>

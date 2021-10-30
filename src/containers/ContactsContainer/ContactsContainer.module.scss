@@ -63,6 +63,22 @@
         line-height: 20px;
     }
 }
+.SocialNetworks {
+    max-width: 300px;
+    display: flex;
+    img {
+        max-width: 37px;
+        cursor: pointer;
+    }
+    @media (max-width: 768px) {
+        padding-left: 20px;
+    }
+}
+.Facebook {
+    margin-right: 25px;
+}
 .Maps {
-    
+    @media (max-width: 768px) {
+        margin-top: 45px;
+    }
 }

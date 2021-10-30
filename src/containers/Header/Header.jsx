@@ -22,12 +22,16 @@ const Header = () => {
         setState((state) => !state)
     }
 
+    const handleCloseMobileMenu = () => {
+        setState(false) 
+    }
+
     return (
         <div className={classes.Wrapper} data-aos="fade-down">
             <div className="container">
                 <div className={classes.Inner}>
                     <div>
-                        <Logo />
+                        <Logo closeMobileMenu={handleCloseMobileMenu}/>
                     </div>
                     <div className={classes.MenuSelectButton}>
                         <Menu />
