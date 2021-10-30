@@ -8,9 +8,9 @@ import { setRoutePathAction } from '../../store/actions/settingsActions'
 import classes from './Logo.module.scss'
 import { useMediaQuery } from '@material-ui/core'
 
-const Logo = ({closeMobileMenu}) => {
-    const tabletMatch = useMediaQuery((theme) => theme.breakpoints.up('md'));
-    const mobileMatch = useMediaQuery((theme) => theme.breakpoints.up('sm'));
+const Logo = () => {
+    // const tabletMatch = useMediaQuery((theme) => theme.breakpoints.up('md'));
+    // const mobileMatch = useMediaQuery((theme) => theme.breakpoints.up('sm'));
     const router = useHistory()
     const dispatch = useDispatch()
     const scrollToTopHandler = () => {
@@ -22,7 +22,6 @@ const Logo = ({closeMobileMenu}) => {
     };
     
     const handleClick = () => {
-        closeMobileMenu()
         dispatch(setRoutePathAction('/'))
         scrollToTopHandler()
     }

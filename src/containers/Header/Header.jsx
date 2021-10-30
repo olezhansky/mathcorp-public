@@ -30,8 +30,8 @@ const Header = () => {
         <div className={classes.Wrapper} data-aos="fade-down">
             <div className="container">
                 <div className={classes.Inner}>
-                    <div>
-                        <Logo closeMobileMenu={handleCloseMobileMenu}/>
+                    <div onClick={handleCloseMobileMenu}>
+                        <Logo/>
                     </div>
                     <div className={classes.MenuSelectButton}>
                         <Menu />
