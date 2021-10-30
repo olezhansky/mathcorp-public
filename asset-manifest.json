@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mathcorp-public/static/css/main.7176205d.chunk.css",
-    "main.js": "/mathcorp-public/static/js/main.6f8a1688.chunk.js",
-    "main.js.map": "/mathcorp-public/static/js/main.6f8a1688.chunk.js.map",
+    "main.css": "/mathcorp-public/static/css/main.738809b1.chunk.css",
+    "main.js": "/mathcorp-public/static/js/main.0a7c5876.chunk.js",
+    "main.js.map": "/mathcorp-public/static/js/main.0a7c5876.chunk.js.map",
     "runtime-main.js": "/mathcorp-public/static/js/runtime-main.5fafcaf6.js",
     "runtime-main.js.map": "/mathcorp-public/static/js/runtime-main.5fafcaf6.js.map",
     "static/css/2.ec02d681.chunk.css": "/mathcorp-public/static/css/2.ec02d681.chunk.css",
-    "static/js/2.15e9a0ff.chunk.js": "/mathcorp-public/static/js/2.15e9a0ff.chunk.js",
-    "static/js/2.15e9a0ff.chunk.js.map": "/mathcorp-public/static/js/2.15e9a0ff.chunk.js.map",
+    "static/js/2.86a06b86.chunk.js": "/mathcorp-public/static/js/2.86a06b86.chunk.js",
+    "static/js/2.86a06b86.chunk.js.map": "/mathcorp-public/static/js/2.86a06b86.chunk.js.map",
     "static/js/3.ad3bd3a7.chunk.js": "/mathcorp-public/static/js/3.ad3bd3a7.chunk.js",
     "static/js/3.ad3bd3a7.chunk.js.map": "/mathcorp-public/static/js/3.ad3bd3a7.chunk.js.map",
     "index.html": "/mathcorp-public/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/mathcorp-public/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.7176205d.chunk.css.map": "/mathcorp-public/static/css/main.7176205d.chunk.css.map",
-    "static/js/2.15e9a0ff.chunk.js.LICENSE.txt": "/mathcorp-public/static/js/2.15e9a0ff.chunk.js.LICENSE.txt",
+    "static/css/main.738809b1.chunk.css.map": "/mathcorp-public/static/css/main.738809b1.chunk.css.map",
+    "static/js/2.86a06b86.chunk.js.LICENSE.txt": "/mathcorp-public/static/js/2.86a06b86.chunk.js.LICENSE.txt",
     "static/media/about.6f2dbefc.png": "/mathcorp-public/static/media/about.6f2dbefc.png",
     "static/media/error.dc4bc880.png": "/mathcorp-public/static/media/error.dc4bc880.png",
     "static/media/feedback-img.53ba3d5b.png": "/mathcorp-public/static/media/feedback-img.53ba3d5b.png",
@@ -49,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.5fafcaf6.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.15e9a0ff.chunk.js",
-    "static/css/main.7176205d.chunk.css",
-    "static/js/main.6f8a1688.chunk.js"
+    "static/js/2.86a06b86.chunk.js",
+    "static/css/main.738809b1.chunk.css",
+    "static/js/main.0a7c5876.chunk.js"
   ]
 }
