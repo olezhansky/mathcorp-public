@@ -36,8 +36,6 @@
     @media (max-width: 768px) {
         display: block;
     }
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
 }
 .ContentItem {
     padding: 40px 30px;
@@ -68,7 +66,6 @@
             max-width: 200px;  
         }
     }
-
 }
 .ContentItemBefore {
     position: relative;

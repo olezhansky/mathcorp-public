@@ -5,20 +5,19 @@ const Contacts = () => {
 
   const scrollToTopHandler = () => {
     window.scrollTo({
-    //   behavior: 'smooth',
         top: 0,
     });
   };
 
-    useEffect(() => {
-      scrollToTopHandler()
-    }, [])
+  useEffect(() => {
+    scrollToTopHandler()
+  }, [])
 
-    return (
-        <div>
-          <ContactsContainer />
-        </div>
-    )
+  return (
+      <div>
+        <ContactsContainer />
+      </div>
+  )
 }
 
 export default Contacts

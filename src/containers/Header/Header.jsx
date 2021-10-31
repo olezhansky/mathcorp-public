@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Menu from '../../components/Menu/Menu'
 import classes from './Header.module.scss'
 import {MenuItem, Select  } from '@material-ui/core';

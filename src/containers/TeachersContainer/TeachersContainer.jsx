@@ -8,12 +8,9 @@ import { useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
 
 const TeachersContainer = () => {
-
     const { t } = useTranslation()
     const dispatch = useDispatch()
-
     const router = useHistory()
-
     const handleClick = () => {
         router.push('/teachers')
         dispatch(setRoutePathAction('/teachers'))

@@ -19,6 +19,7 @@ const ContactsContainer = () => {
     const handleClick = (str) => {
         setState(str)
     }
+
     return (
         <div className={classes.Wrapper}>
             <div className={classes.Inner}>
@@ -85,9 +86,7 @@ const ContactsContainer = () => {
                             </a>
                         </div>
                     </div>
-                    <div 
-                        className={classes.Maps} 
-                    >
+                    <div className={classes.Maps}>
                         {state === 'livoberezhna' && <MapLivoberezhna />}  
                         {state === 'lukianivska' && <MapLukianivska />}  
                     </div>

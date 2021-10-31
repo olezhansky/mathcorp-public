@@ -1,12 +1,12 @@
 import React from 'react'
 import logo from '../../assets/images/common/logo.png'
-import logoMobile from '../../assets/images/common/logoMobile.png'
+// import logoMobile from '../../assets/images/common/logoMobile.png'
 // import logoIcon from '../../assets/icons/logo.svg'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setRoutePathAction } from '../../store/actions/settingsActions'
 import classes from './Logo.module.scss'
-import { useMediaQuery } from '@material-ui/core'
+// import { useMediaQuery } from '@material-ui/core'
 
 const Logo = () => {
     // const tabletMatch = useMediaQuery((theme) => theme.breakpoints.up('md'));

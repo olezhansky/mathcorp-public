@@ -16,22 +16,22 @@ const Feedback = () => {
         <div className={classes.Wrapper}>
            <div className="container">
                 <div className={classes.Inner}>
-                        <div className={classes.Content}>
-                            <div className={classes.OvalText}>
-                                {tabletMatch &&   <img src={ovalImg} alt="img"/>}
-                                {mobileMatch && !tabletMatch && <img src={ovalMobileImg} alt="img"/>}
-                                <p className={classes.Text}  data-aos="zoom-in" data-aos-easing="ease-in-sine">
-                                    {t('form.text')} <span>{t('form.textBold')}</span> {t('form.text2')}
-                                </p>
-                            </div>
-                            <div className={classes.Images} data-aos="fade-right">
-                                {tabletMatch &&   <img src={feedbackImg} alt="img"/>}
-                                {mobileMatch && !tabletMatch && <img src={feedbackImgMobile} alt="img"/>}                           
-                            </div>
+                    <div className={classes.Content}>
+                        <div className={classes.OvalText}>
+                            {tabletMatch &&   <img src={ovalImg} alt="img"/>}
+                            {mobileMatch && !tabletMatch && <img src={ovalMobileImg} alt="img"/>}
+                            <p className={classes.Text}  data-aos="zoom-in" data-aos-easing="ease-in-sine">
+                                {t('form.text')} <span>{t('form.textBold')}</span> {t('form.text2')}
+                            </p>
                         </div>
-                        <div className={classes.Form} data-aos="zoom-in-up">
-                            <Form />
+                        <div className={classes.Images} data-aos="fade-right">
+                            {tabletMatch &&   <img src={feedbackImg} alt="img"/>}
+                            {mobileMatch && !tabletMatch && <img src={feedbackImgMobile} alt="img"/>}                           
                         </div>
+                    </div>
+                    <div className={classes.Form} data-aos="zoom-in-up">
+                        <Form />
+                    </div>
                 </div>
            </div>
         </div>

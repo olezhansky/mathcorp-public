@@ -12,7 +12,6 @@ import sendMessageTotelegram from '../../api/telegram';
 import { closeModalAction, openModalConfirmAction, setUserNameAction } from '../../store/actions/settingsActions';
 import store from '../../store/store'
 import classes from './Form.module.scss'
-import i18n from '../../i18n';
 
 
 const FormComponent = props => {

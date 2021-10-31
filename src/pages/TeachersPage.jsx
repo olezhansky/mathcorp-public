@@ -5,7 +5,6 @@ import classes from './Pages.module.scss'
 const TeachersPage = () => {
     const scrollToTopHandler = () => {
         window.scrollTo({
-        //   behavior: 'smooth',
             top: 0,
         });
       };
