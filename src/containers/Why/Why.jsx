@@ -14,7 +14,7 @@ const Why = () => {
             <div className="container">
                 <div className={classes.Inner}>
                     <div className={classes.Title}>
-                        <Title title="Чому саме ми?"/>
+                        <Title title={t('why.title')}/>
                     </div>
                     <ul className={classes.List}>
                         {whyData.map((item) => {

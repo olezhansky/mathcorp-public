@@ -49,6 +49,12 @@ import review5 from '../assets/images/reviews/review5.png';
 import review6 from '../assets/images/reviews/review6.png';
 // import review7 from '../assets/images/reviews/review7.png';
 
+// Social networks images
+import phone from '../assets/images/socialNetworks/phone.png';
+import instagram from '../assets/images/socialNetworks/instagram.png';
+import facebook from '../assets/images/socialNetworks/facebook.png';
+import telegram from '../assets/images/socialNetworks/telegram.png';
+
 
 
 export const whyData = [
@@ -212,4 +218,11 @@ export const reviews = [
     {id: 4, img: review4},
     {id: 5, img: review5},
     {id: 6, img: review6},
+]
+
+export const socialNetworks = [
+    {id: 1, img: phone, href: 'tel:+380639725107'},
+    {id: 2, img: instagram, href: 'https://www.instagram.com/math.corporation/?utm_medium=copy_link'},
+    {id: 3, img: facebook, href: 'https://m.facebook.com/pg/math.corporation.kyiv/reviews/?ref=page_internal&mt_nav=0'},
+    {id: 4, img: telegram, href: '#'},
 ]

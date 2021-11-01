@@ -3,9 +3,117 @@
     top: 80%;
     right: 2%;
     cursor: pointer;
-    z-index: 9;
+    z-index: 10;
+    background-color: #fff;
+    border: 1.5px solid #4797C8;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
     @media (max-width: 480px) {
         top: 87%;
         right: 3%; 
+        width: 50px;
+        height: 50px;
+    }
+}
+.ImagesInner {
+    margin-top: 5px;
+    @media (max-width: 480px) {
+        img {
+            max-width: 30px;
+        }
+    }
+}
+.Lines {
+    position: absolute;
+    top: 22px;
+    left: 21.5px; 
+    @media (max-width: 480px) {
+        top: 13px;
+        left: 14px; 
+    }
+}
+
+.LineTop,
+.LineCenter,
+.LineBottom {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: .3s ease;
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 2px;
+    }
+
+}
+.LineTopTransform {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: .3s ease;
+    transform: translate(0px, 5px) rotate(45deg);
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 2px;
+    }
+}
+.LineCenterTransform {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: .3s ease;
+    transform: scale(0);
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 2px;
+    }
+}
+.LineBottomTransform{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: .3s ease;
+    transform: translate(0px, -5px)rotate(-45deg);
+    @media (max-width: 480px) {
+        width: 19px;
+        height: 2px;
+    }
+}
+
+.SocialNetworks {
+    z-index: 10;
+    top: -100px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s ease;
+}
+.SocialNetworksActive {
+    z-index: 10;
+    top: -250px;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transition: .7s ease;
+}
+.SocialNetworksItem {
+    margin-bottom: 10px;
+    img {
+        max-width: 45px; 
+    }
+    @media (max-width: 480px) {
+        img {
+            max-width: 40px; 
+            height: 40px;
+        }
     }
 }

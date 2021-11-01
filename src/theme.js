@@ -29,10 +29,6 @@ const theme = createTheme({
                   backgroundColor: '#21587B',
                 },
               },
-              // '@media (max-width: 480px)': {
-              //   fontSize: '14px',
-              //   lineHeight: '16px',
-              // }
           },
           outlined: {
               padding: '8px 70px',
