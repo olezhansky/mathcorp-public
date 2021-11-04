@@ -2,4 +2,7 @@
     cursor: pointer;
     position: relative;
     z-index: 150;
+    img {
+        max-width: 70px;
+    }
 }

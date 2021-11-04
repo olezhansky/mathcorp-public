@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import fixedImg from '../../assets/icons/fixed-email.svg'
-// import fixedImgMobile from '../../assets/icons/fixed-email-mobile.svg'
 import { socialNetworks } from '../../data/data'
 import classes from './FixedEmail.module.scss'
 
@@ -9,7 +8,6 @@ const FixedEmail = () => {
     const handleClick = () => {
         setToggle(state => !state)
     }
-
     return (
         <div className={classes.Images} onClick={handleClick} data-aos='fade-up'>
             <div className={classes.ImagesInner}>
