@@ -13,19 +13,15 @@ const Header = () => {
     const { t } = useTranslation();
     const dispatch = useDispatch();
     const {language, mobileMenu} = useSelector((state) => state.settingsReducer)
-
     const handleChangeLanguage = (e) => {
         dispatch(setLanguage(e.target.value))
     }
-
     const handleClick = () => {
         dispatch(toggleMobileMenuAction())
     }
-
     const handleCloseMobileMenu = () => {
         dispatch(closeMobileMenuAction())
     }
-
     return (
         <div className={classes.Wrapper} data-aos="fade-down">
             <div className="container">

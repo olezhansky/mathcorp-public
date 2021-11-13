@@ -4,9 +4,7 @@ import { useDispatch } from 'react-redux';
 import { openModalAction } from '../../../store/actions/settingsActions';
 
 const MyButton = ({children}) => {
-
     const dispatch = useDispatch()
-    
     const handleClick = () => {
         dispatch(openModalAction())
     }

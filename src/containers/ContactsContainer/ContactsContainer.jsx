@@ -11,15 +11,11 @@ import MapLukianivska from '../../components/Maps/MapLukianivska/MapLukianivska'
 import { useTranslation } from 'react-i18next'
 
 const ContactsContainer = () => {
-
     const { t } = useTranslation()
-
     const [state, setState] = useState('livoberezhna')
-
     const handleClick = (str) => {
         setState(str)
     }
-
     return (
         <div className={classes.Wrapper}>
             <div className={classes.Inner}>

@@ -3,8 +3,7 @@ import { useDispatch } from 'react-redux'
 import { closeModalAction, closeModalConfirmAction } from '../../../store/actions/settingsActions'
 import classes from './Backdrop.module.scss'
 
-const Backdrop = ({isOpen, onClick}) => {
-
+const Backdrop = ({isOpen}) => {
     const dispatch = useDispatch()
     const handleClick = () => {
         dispatch(closeModalAction())
@@ -15,6 +14,4 @@ const Backdrop = ({isOpen, onClick}) => {
     )  
 }
    
-
-
 export default Backdrop

@@ -15,19 +15,19 @@ const Menu = () => {
         dispatch(setRoutePathAction(router.location.pathname))
     }
     return (
-        <ul className={classes.list}>
+        <ul className={classes.List}>
             <li onClick={handleClick}>
-                <NavLink className={routePath === '/' ? classes.itemActive : classes.item} to='/'>
+                <NavLink className={routePath === '/' ? classes.ItemActive : classes.Item} to='/'>
                     {t('menu.main')}
                 </NavLink>
             </li>
             <li onClick={handleClick}>
-                <NavLink className={routePath === '/teachers' ? classes.itemActive : classes.item} to='/teachers'>
+                <NavLink className={routePath === '/teachers' ? classes.ItemActive : classes.Item} to='/teachers'>
                     {t('menu.teachers')}
                 </NavLink>
             </li>
             <li onClick={handleClick}>
-                < NavLink className={routePath === '/contacts' ? classes.itemActive : classes.item} to='/contacts'>
+                < NavLink className={routePath === '/contacts' ? classes.ItemActive : classes.Item} to='/contacts'>
                     {t('menu.contacts')}
                 </NavLink>
             </li>

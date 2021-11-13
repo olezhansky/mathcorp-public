@@ -1,11 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.scss'
+import App from './App'
 import { BrowserRouter } from 'react-router-dom'
-import { ThemeProvider } from '@material-ui/styles';
-import { Provider } from 'react-redux';
+import { ThemeProvider } from '@material-ui/styles'
+import { Provider } from 'react-redux'
 import store from './store/store'
 import theme from './theme'
 
@@ -20,6 +19,4 @@ ReactDOM.render(
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
-);
-
-reportWebVitals();
+)

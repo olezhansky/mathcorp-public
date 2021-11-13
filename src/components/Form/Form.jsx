@@ -25,22 +25,12 @@ const FormComponent = props => {
     {value: "11", label: "11"},
   ];
   
-  // const optionsDistrict = [
-  //   {value: "Lukianivska", label: i18n.t('form.optionDistrictLukianivska')},
-  //   {value: "Livoberezhna", label: i18n.t('form.optionDistrictLivoberezhna')},
-  // ];
-  // const optionsTypeOfStudy = [
-  //   {value: "онлайн", label: "онлайн"},
-  //   {value: "очні", label: "очні"},
-  // ];
-  
   const { t } = useTranslation()
   const {
     values,
     touched,
     errors,
     handleChange,
-    // handleBlur,
     handleSubmit,
   } = props;
 
@@ -52,9 +42,6 @@ const FormComponent = props => {
               label={t('form.name')} 
               value={values.name}
               onChange={handleChange}
-              // onBlur={handleBlur}
-              // helperText={touched.name ? errors.name : ""}
-              // error={touched.name && Boolean(errors.name)}
               margin="dense"
               variant="outlined"
             />
@@ -67,12 +54,9 @@ const FormComponent = props => {
             id="phone"
             label={t('form.phone')} 
             type="phone"
-            placeholder='+380(067)2345678'
+            placeholder='+380672345678'
             value={values.phone}
             onChange={handleChange}
-            // onBlur={handleBlur}
-            // helperText={touched.phone ? errors.phone : ""}
-            // error={touched.phone && Boolean(errors.phone)}
             margin="dense"
             variant="outlined"
             fullWidth
@@ -89,8 +73,6 @@ const FormComponent = props => {
               label={t('form.class')}
               value={values.selectClass}
               onChange={handleChange("selectClass")}
-              // helperText={touched.selectClass ? errors.selectclass : ""}
-              // error={touched.selectClass && Boolean(errors.selectClass)}
               margin="dense"
               variant="outlined"
               fullWidth
@@ -105,54 +87,6 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.selectClass}</div>
           ) : null}
           </div>
-        {/* <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1900">
-            <TextField
-              SelectProps={{ MenuProps: { disableScrollLock: true } }}
-              select
-              id="district"
-              label={t('form.district')}
-              value={values.district}
-              onChange={handleChange("district")}
-              // helperText={touched.district ? errors.district : ""}
-              // error={touched.district && Boolean(errors.district)}
-              margin="dense"
-              variant="outlined"
-              fullWidth
-            >
-              {optionsDistrict.map(option => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-            {touched.district  ? (
-            <div className={classes.TextFieldError}>{errors.district}</div>
-          ) : null}
-          </div> */}
-          {/* <div className={classes.TextField} data-aos="fade-up" data-aos-duration="2200">
-            <TextField
-              SelectProps={{ MenuProps: { disableScrollLock: true } }}
-              select
-              id="typeOfStudy"
-              label={t('form.typeOfStudy')}
-              value={values.typeOfStudy}
-              onChange={handleChange("typeOfStudy")}
-              // helperText={touched.typeOfStudy ? errors.typeOfStudy : ""}
-              // error={touched.typeOfStudy && Boolean(errors.typeOfStudy)}
-              margin="dense"
-              variant="outlined"
-              fullWidth
-            >
-              {optionsTypeOfStudy.map(option => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-            {touched.typeOfStudy  ? (
-            <div className={classes.TextFieldError}>{errors.typeOfStudy}</div>
-          ) : null}
-          </div> */}
           <div className={classes.Button} data-aos="fade-up" data-aos-duration="2500">
             <Button variant="outlined" type="submit">{t('form.button')}</Button>
           </div>

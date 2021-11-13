@@ -1,8 +1,8 @@
 import React from 'react'
 import Title from '../../components/Title/Title'
 import classes from './Price.module.scss'
-import priceImg1 from '../../assets/images/price/price-img1.png'
-import priceImg2 from '../../assets/images/price/price-img2.png'
+import priceImg1 from '../../assets/images/price/price-img1.webp'
+import priceImg2 from '../../assets/images/price/price-img2.webp'
 import MyButton from '../../components/UI/Button/MyButton'
 import { useTranslation } from 'react-i18next'
 

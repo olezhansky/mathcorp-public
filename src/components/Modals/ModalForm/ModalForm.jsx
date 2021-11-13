@@ -1,7 +1,7 @@
 import React from 'react'
 import Backdrop from '../../UI/Backdrop/Backdrop'
 import closeImg from '../../../assets/images/common/close.png'
-import img from '../../../assets/images/feedback/feedback-img.png'
+import img from '../../../assets/images/feedback/feedback-img.svg'
 import classes from './Modal.module.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { closeModalAction } from '../../../store/actions/settingsActions'

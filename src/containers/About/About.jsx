@@ -1,13 +1,12 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import classes from './About.module.scss';
-import aboutImg from '../../assets/images/about/about.png'
+import aboutImg from '../../assets/images/about/about.webp'
 import MyButton from '../../components/UI/Button/MyButton';
 
 
 const About = () => {
     const { t } = useTranslation();
-  
     return (
         <div className={classes.Wrapper}>
             <div className="container">

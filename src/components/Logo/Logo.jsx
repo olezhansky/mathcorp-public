@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from '../../assets/images/common/logo.png'
 import logoMobile from '../../assets/icons/logo.svg'
-// import logoIcon from '../../assets/icons/logo.svg'
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setRoutePathAction } from '../../store/actions/settingsActions'
@@ -20,15 +19,12 @@ const Logo = () => {
             top: 0,
         });
     };
-    
     const handleClick = () => {
         dispatch(setRoutePathAction('/'))
         scrollToTopHandler()
     }
-
     return (
         <div className={classes.Logo} onClick={handleClick}>
-            {/* <img src={logo} alt="img"/> */}
             {tabletMatch &&  <img src={logo} alt="img"/>}
             {mobileMatch && !tabletMatch && <img src={logoMobile} alt="img"/>}
         </div>

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import { closeModalAction, closeModalConfirmAction } from '../../../store/actions/settingsActions'
 import classes from './Backdrop.module.scss'
 
-const BackdropConfirm = ({isOpen, onClick}) => {
+const BackdropConfirm = ({isOpen}) => {
 
     const dispatch = useDispatch()
     const handleClick = () => {
@@ -15,6 +15,4 @@ const BackdropConfirm = ({isOpen, onClick}) => {
     )  
 }
    
-
-
 export default BackdropConfirm
