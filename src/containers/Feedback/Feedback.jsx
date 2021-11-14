@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Feedback.module.scss'
-import feedbackImg from '../../assets/images/feedback/feedback-img.png'
+import feedbackImg from '../../assets/images/feedback/feedback-img.svg'
 import feedbackImgMobile from '../../assets/images/feedback/feedback-img-mobile.svg'
 import ovalImg from '../../assets/images/feedback/oval.png'
 import ovalMobileImg from '../../assets/images/feedback/ovalMobile.png'

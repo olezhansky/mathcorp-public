@@ -40,9 +40,9 @@ import review5 from '../assets/images/reviews/review5.webp'
 import review6 from '../assets/images/reviews/review6.webp'
 
 // Social networks images
-import phone from '../assets/images/socialNetworks/phone.png'
-import telegram from '../assets/images/socialNetworks/telegram.png'
-import viber from '../assets/images/socialNetworks/viber.png'
+import phone from '../assets/images/socialNetworks/phone.svg'
+import telegram from '../assets/images/socialNetworks/telegram.svg'
+import viber from '../assets/images/socialNetworks/viber.svg'
 
 export const whyData = [
   {

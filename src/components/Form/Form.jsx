@@ -9,7 +9,6 @@ import * as yup from "yup";
 import { useTranslation } from 'react-i18next';
 import validationsForm from './validationSchema'
 import sendMessageTotelegram from '../../api/telegram';
-import { useHistory } from 'react-router-dom'
 import { closeModalAction, openModalConfirmAction, setUserNameAction } from '../../store/actions/settingsActions';
 import store from '../../store/store'
 import classes from './Form.module.scss'
@@ -36,10 +35,6 @@ const FormComponent = props => {
     handleChange,
     handleSubmit,
   } = props;
-
-  const handleClick = () => {
-    console.log('Click');
-  }
 
   return (
       <form onSubmit={handleSubmit} className={classes.Form}>
@@ -95,10 +90,13 @@ const FormComponent = props => {
           ) : null}
           </div>
           <div className={classes.Button} data-aos="fade-up" data-aos-duration="2500" >
-            <Button variant="outlined" type="submit">{t('form.button')}</Button>
+            <Button variant="contained" type="submit">{t('form.button')}</Button>
           </div>
+         { errors.name && console.log(errors.name )}
       </form>
+      
   );
+
 };
 
 const Form = withFormik({
@@ -112,6 +110,7 @@ const Form = withFormik({
       phone: phone || "",
       selectClass: selectClass || "",
     };
+  
   },
   validationSchema: yup.object().shape(validationsForm),
   handleSubmit: (values, {resetForm}) => {

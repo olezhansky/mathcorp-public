@@ -16,7 +16,7 @@ const HowJoinMobile = () => {
             <ul className={classes.Main}>
                 {howJoinDataMobile.map(((item, index) => (
                     <li className={classes.Item} data-aos={item.aos} data-aos-duration={item.duration}>
-                        <div>
+                        <div className={classes.ItemImages}>
                             <img src={item.icon} alt="img"/>
                         </div>
                         <p>{index + 1}. {t(item.title)}</p>
