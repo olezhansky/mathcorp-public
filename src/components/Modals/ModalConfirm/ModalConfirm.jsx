@@ -5,15 +5,18 @@ import { useDispatch, useSelector } from 'react-redux'
 import { closeMobileMenuAction, closeModalConfirmAction } from '../../../store/actions/settingsActions'
 import { useTranslation } from 'react-i18next'
 import BackdropConfirm from '../../UI/BackdropConfirm/BackdropConfirm'
+import { useHistory } from 'react-router-dom'
 
 const ModalConfirm = () => {
     const { t } = useTranslation()
     const dispatch = useDispatch()
+    const router = useHistory()
     const isModalConfirmActive = useSelector((state) => state.settingsReducer.modalConfirm)
     const userName = useSelector((state) => state.settingsReducer.userName)
     const handleClick = () => {
         dispatch(closeModalConfirmAction())
         dispatch(closeMobileMenuAction())
+        router.push('/')
     }
     return (
         <>

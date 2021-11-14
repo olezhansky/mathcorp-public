@@ -9,9 +9,11 @@ import * as yup from "yup";
 import { useTranslation } from 'react-i18next';
 import validationsForm from './validationSchema'
 import sendMessageTotelegram from '../../api/telegram';
+import { useHistory } from 'react-router-dom'
 import { closeModalAction, openModalConfirmAction, setUserNameAction } from '../../store/actions/settingsActions';
 import store from '../../store/store'
 import classes from './Form.module.scss'
+import history from '../../util/history'
 
 
 const FormComponent = props => {
@@ -26,6 +28,7 @@ const FormComponent = props => {
   ];
   
   const { t } = useTranslation()
+
   const {
     values,
     touched,
@@ -33,6 +36,10 @@ const FormComponent = props => {
     handleChange,
     handleSubmit,
   } = props;
+
+  const handleClick = () => {
+    console.log('Click');
+  }
 
   return (
       <form onSubmit={handleSubmit} className={classes.Form}>
@@ -87,7 +94,7 @@ const FormComponent = props => {
             <div className={classes.TextFieldError}>{errors.selectClass}</div>
           ) : null}
           </div>
-          <div className={classes.Button} data-aos="fade-up" data-aos-duration="2500">
+          <div className={classes.Button} data-aos="fade-up" data-aos-duration="2500" >
             <Button variant="outlined" type="submit">{t('form.button')}</Button>
           </div>
       </form>
@@ -106,15 +113,14 @@ const Form = withFormik({
       selectClass: selectClass || "",
     };
   },
-
   validationSchema: yup.object().shape(validationsForm),
-
   handleSubmit: (values, {resetForm}) => {
       sendMessageTotelegram(`Ім'я: ${values.name}, телефон: ${values.phone}, клас: ${values.selectClass}`)
       store.dispatch(setUserNameAction(values.name))
       store.dispatch(openModalConfirmAction())
       store.dispatch(closeModalAction())
       resetForm()
+      history.push('/thanks');
   }
 })(FormComponent);
 

@@ -14,6 +14,7 @@ const Modal = () => {
     const isModalActive = useSelector((state) => state.settingsReducer.modal)
     const handleClick = () => {
         dispatch(closeModalAction())
+       
     }
     return (
         <>
