@@ -5,6 +5,7 @@ import ErrorPage from '../pages/ErrorPage'
 import Main from '../pages/Main'
 import Thanks from '../pages/Thanks'
 import TeachersPage from '../pages/TeachersPage'
+import GoogleAnalytics from '../components/GoogleAnalytics/GoogleAnalytics'
 
 const Routes = () => (
   <Switch>
@@ -14,6 +15,7 @@ const Routes = () => (
     <Route exact path="/thanks" component={Thanks} />
     <Route path="/404" component={ErrorPage} />
     <Redirect from="*" to="/404" />
+    <GoogleAnalytics />
   </Switch>
 )
 
