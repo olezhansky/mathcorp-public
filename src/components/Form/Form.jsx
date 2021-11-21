@@ -9,7 +9,7 @@ import * as yup from "yup";
 import { useTranslation } from 'react-i18next';
 import validationsForm from './validationSchema'
 import sendMessageTotelegram from '../../api/telegram';
-import { closeModalAction, openModalConfirmAction, setUserNameAction } from '../../store/actions/settingsActions';
+import { closeModalAction } from '../../store/actions/settingsActions';
 import store from '../../store/store'
 import classes from './Form.module.scss'
 import history from '../../util/history'
@@ -115,11 +115,13 @@ const Form = withFormik({
   validationSchema: yup.object().shape(validationsForm),
   handleSubmit: (values, {resetForm}) => {
       sendMessageTotelegram(`Ім'я: ${values.name}, телефон: ${values.phone}, клас: ${values.selectClass}`)
-      store.dispatch(setUserNameAction(values.name))
-      store.dispatch(openModalConfirmAction())
-      store.dispatch(closeModalAction())
-      resetForm()
-      history.push('/thanks');
+      setTimeout(() => {
+        store.dispatch(closeModalAction())
+        sessionStorage.setItem('userName', values.name)
+        resetForm()
+        history.push('/thanks');
+        window.location.reload()
+      }, 1000)
   }
 })(FormComponent);
 

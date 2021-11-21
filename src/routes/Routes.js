@@ -12,7 +12,7 @@ const Routes = () => (
     <Route exact path="/" component={Main} />
     <Route exact path="/teachers" component={TeachersPage} />
     <Route exact path="/contacts" component={Contacts} />
-    <Route exact path="/thanks" component={Thanks} />
+    <Route exact path="/thanks" component={() => <Thanks />} />
     <Route path="/404" component={ErrorPage} />
     <Redirect from="*" to="/404" />
     <GoogleAnalytics />

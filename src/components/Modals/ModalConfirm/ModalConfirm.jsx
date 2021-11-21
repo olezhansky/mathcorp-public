@@ -1,26 +1,21 @@
 import React from 'react'
 import images from '../../../assets/images/common/orderConfirm.png'
 import classes from './ModalConfirm.module.scss'
-import { useDispatch, useSelector } from 'react-redux'
-import { closeMobileMenuAction, closeModalConfirmAction } from '../../../store/actions/settingsActions'
 import { useTranslation } from 'react-i18next'
 import BackdropConfirm from '../../UI/BackdropConfirm/BackdropConfirm'
 import { useHistory } from 'react-router-dom'
 
 const ModalConfirm = () => {
     const { t } = useTranslation()
-    const dispatch = useDispatch()
     const router = useHistory()
-    const isModalConfirmActive = useSelector((state) => state.settingsReducer.modalConfirm)
-    const userName = useSelector((state) => state.settingsReducer.userName)
+    const userName = sessionStorage.getItem('userName')
     const handleClick = () => {
-        dispatch(closeModalConfirmAction())
-        dispatch(closeMobileMenuAction())
-        router.push('/')
+            sessionStorage.removeItem('userName')
+            router.push('/')
     }
     return (
         <>
-            <div className={isModalConfirmActive ? classes.ModalActive : classes.Modal}>
+            <div className={classes.Modal}>
                 <div className={classes.ModalBody}>
                     <div className={classes.Images}>
                         <img src={images} alt="img"/>
@@ -35,7 +30,7 @@ const ModalConfirm = () => {
                     </div>  
                 </div>
             </div>
-            <BackdropConfirm isOpen={isModalConfirmActive}/> 
+            <BackdropConfirm isOpen={true}/> 
         </>
     )
 }

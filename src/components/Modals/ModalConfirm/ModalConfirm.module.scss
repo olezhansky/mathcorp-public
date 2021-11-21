@@ -1,24 +1,9 @@
 .Modal {
     position: fixed;
     left: 50%;
-    top: 0%;
-    transform: translate(-50%, -50%);
-    z-index: 600;
-    visibility: hidden;
-    opacity: 0;
-}
-.ModalActive {
-    position: fixed;
-    width: 100%;
-    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: .5s ease-in-out;
-    max-width: 500px;
     z-index: 600;
-    display: block;
-    opacity: 1;
-    visibility: visible;
 }
 .ModalBody {
     width: 100%;

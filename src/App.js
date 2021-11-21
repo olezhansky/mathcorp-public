@@ -5,7 +5,6 @@ import i18n from './i18n'
 import Footer from './containers/Footer/Footer'
 import Header from './containers/Header/Header'
 import Modal from './components/Modals/ModalForm/ModalForm'
-import ModalConfirm from './components/Modals/ModalConfirm/ModalConfirm'
 import Routes from './routes/Routes'
 import {
   setCurrentRouteFromSessionStorageAction,
@@ -14,7 +13,6 @@ import {
 import FixedEmail from './components/FixedEmail/FixedEmail'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import GoogleAnalytics from './components/GoogleAnalytics/GoogleAnalytics'
 
 function App() {
   const dispatch = useDispatch()
@@ -56,12 +54,10 @@ function App() {
       <I18nextProvider i18n={i18n}>
         <FixedEmail />
         <Modal />
-        <ModalConfirm />
         <Header />
         <Routes />
         <Footer />
       </I18nextProvider>
-      <GoogleAnalytics />
     </div>
   )
 }
