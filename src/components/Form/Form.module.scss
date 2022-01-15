@@ -38,4 +38,12 @@
     }
 }
 
+.ButtonDisabled {
+    button {
+        background-color: grey; 
+        &:hover {
+            background-color: grey;
+        }
+    }  
+}
 

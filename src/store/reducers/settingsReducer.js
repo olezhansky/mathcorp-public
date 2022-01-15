@@ -3,7 +3,6 @@ import { ACTION } from '../actionTypes/actionTypes'
 const initialState = {
   language: 'UA', // RU
   modal: false,
-  // modalConfirm: true,
   mobileMenu: false,
   userName: '',
   routePath: '/',
@@ -24,24 +23,12 @@ const settingsReducer = (state = initialState, action) => {
         modal: false,
       }
     }
-    // case ACTION.CLOSE_MODAL_CONFIRM: {
-    //   return {
-    //     ...state,
-    //     modalConfirm: false,
-    //   }
-    // }
     case ACTION.OPEN_MODAL: {
       return {
         ...state,
         modal: true,
       }
     }
-    // case ACTION.OPEN_MODAL_CONFIRM: {
-    //   return {
-    //     ...state,
-    //     modalConfirm: true,
-    //   }
-    // }
     case ACTION.SET_USER_NAME: {
       return {
         ...state,
