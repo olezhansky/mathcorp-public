@@ -1,13 +1,12 @@
 import * as yup from 'yup'
-import i18n from '../../i18n'
 
 const validationsForm = yup.object({
-  name: yup.string().required(i18n.t('form.errorName')),
+  name: yup.string().required('form.errorName'),
   phone: yup
     .number()
-    .typeError(i18n.t('form.errorPhoneCorrect'))
-    .required(i18n.t('form.errorPhone')),
-  selectClass: yup.string().required(i18n.t('form.errorSelect')),
+    .typeError('form.errorPhoneCorrect')
+    .required('form.errorPhone'),
+  selectClass: yup.string().required('form.errorSelect'),
 })
 
 export default validationsForm

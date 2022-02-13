@@ -7,16 +7,8 @@
 
 }
 .TextField {
-    position: relative;
     margin-bottom: 18px;
 }
-.TextFieldError {
-    top: 50px;
-    position: absolute;
-    color: red;
-    font-size: 14px;
-}
-
 .Button {
     margin-top: 31px;
     button {
@@ -37,7 +29,6 @@
         }
     }
 }
-
 .ButtonDisabled {
     button {
         background-color: grey; 

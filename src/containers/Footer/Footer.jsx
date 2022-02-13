@@ -32,6 +32,15 @@ const Footer = () => {
                         <img src={instagramImg} alt="img"/>
                     </a>
                 </div>
+                <div className={classes.Offer}>
+                    <a 
+                        rel="noreferrer" 
+                        href="https://drive.google.com/file/d/1hnoICUL7TXP8mKD8IGIGYJ3vKFlQT6fs/view?usp=sharing" 
+                        target="_blank"
+                    >
+                        {t('footer.offer')}
+                    </a>
+                </div>
                 <p className={classes.SubText}>{t('footer.subText')}</p>
                 <div className={classes.Copyright}>
                     <p> &#169;Copyright 2021. {t('footer.copyright')}</p>

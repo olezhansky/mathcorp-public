@@ -1,9 +1,5 @@
 import React, {useEffect, useCallback} from "react";
-import {
-  TextField,
-  MenuItem,
-  Button
-} from "@material-ui/core";
+import { MenuItem, Button} from "@material-ui/core";
 import { useFormik } from 'formik';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom'
@@ -12,6 +8,7 @@ import sendMessageTotelegram from '../../api/telegram';
 import { closeModalAction } from '../../store/actions/settingsActions';
 import { useDispatch } from 'react-redux'
 import classes from './Form.module.scss'
+import MyFieldInput from "../UI/MyFieldInput/MyFieldInput";
 
 
 const Form = () => {
@@ -68,62 +65,50 @@ const Form = () => {
   return (
       <form className={classes.Form}>
         <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1000">
-          <TextField
-              id="name"
-              label={t('form.name')} 
-              value={formik.values.name}
-              onChange={formik.handleChange}
-              margin="dense"
-              variant="outlined"
-            />
-             {formik.touched.name  ? (
-            <div className={classes.TextFieldError}>{formik.errors.name}</div>
-          ) : null}
+          <MyFieldInput 
+            id="name" 
+            label={t('form.name')} 
+            value={formik.values.name} 
+            onChange={formik.handleChange} 
+            touched={formik.touched.name}
+            error={formik.errors.name}
+          />
         </div>
         <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1300">
-          <TextField
+          <MyFieldInput 
+            id="phone" 
+            label={t('form.phone')} 
+            value={formik.values.phone}  
+            onChange={formik.handleChange}
+            touched={formik.touched.phone}
+            error={formik.errors.phone}
+            placeholder='0672345678'
             inputProps={{
               inputMode: 'numeric',
             }}
-            id="phone"
-            label={t('form.phone')} 
-            type="phone"
-            placeholder='0672345678'
-            value={formik.values.phone}
-            onChange={formik.handleChange}
-            margin="dense"
-            variant="outlined"
-            fullWidth
           />
-           {formik.touched.phone  ? (
-            <div className={classes.TextFieldError}>{formik.errors.phone}</div>
-          ) : null}
         </div>
         <div className={classes.TextField} data-aos="fade-up" data-aos-duration="1600">
-            <TextField
-              SelectProps={{ MenuProps: { disableScrollLock: true } }}
-              select
-              id="selectClass"
-              label={t('form.class')}
-              value={formik.values.selectClass}
-              onChange={formik.handleChange("selectClass")}
-              margin="dense"
-              variant="outlined"
-              fullWidth
-            >
-              {optionsClass.map(option => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-            {formik.touched.selectClass  ? (
-            <div className={classes.TextFieldError}>{formik.errors.selectClass}</div>
-          ) : null}
-          </div>
-          <div className={myError ? `${classes.Button} ${classes.ButtonDisabled}` : classes.Button}>
-            <Button variant="contained" onClick={handleSubmit}>{t('form.button')}</Button>
-          </div>
+          <MyFieldInput 
+            id="selectClass" 
+            label={t('form.class')} 
+            value={formik.values.selectClass}  
+            onChange={formik.handleChange("selectClass")}
+            touched={formik.touched.selectClass}
+            error={formik.errors.selectClass}
+            SelectProps={{ MenuProps: { disableScrollLock: true } }}
+            select
+          >
+            {optionsClass.map(option => (
+              <MenuItem key={option.value} value={option.value}>
+                {option.label}
+              </MenuItem>
+            ))}
+          </MyFieldInput>
+        </div>
+        <div className={myError ? `${classes.Button} ${classes.ButtonDisabled}` : classes.Button}>
+          <Button variant="contained" onClick={handleSubmit}>{t('form.button')}</Button>
+        </div>
       </form>
       
   );

@@ -46,6 +46,18 @@
         }
     }
 }
+.Offer {
+    margin-top: 25px;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: #4797C8;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+   
+}
 .SubText {
     margin-top: 28px;
     text-align: center;
