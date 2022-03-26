@@ -31,7 +31,7 @@ const FixedEmail = () => {
                     )
                 })}
             </ul>
-        </div>
+        </div> 
     )
 }
 

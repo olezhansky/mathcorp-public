@@ -1,0 +1,20 @@
+.WrongOrientationScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.Text {
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 10px;
+}
