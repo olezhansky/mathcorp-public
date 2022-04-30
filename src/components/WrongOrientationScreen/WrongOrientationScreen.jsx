@@ -9,7 +9,7 @@ const WrongOrientationScreen = () => {
   return (
     <div className={classes.WrongOrientationScreen}>
         <p className={classes.Text}>{t('orientation.text')}</p>
-        <img src={DeviceIcon} />
+        <img src={DeviceIcon} alt="img"/>
     </div>
   )
 }

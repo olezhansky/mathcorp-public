@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import MyButton from '../../components/UI/Button/MyButton';
 import Logo from '../../components/Logo/Logo';
 import MobileMenu from '../../components/MobileMenu/MobileMenu';
+import flagImg from '../../assets/images/flag.png'
 
 const Header = () => {
     const { t } = useTranslation();
@@ -24,6 +25,10 @@ const Header = () => {
     }
     return (
         <div className={classes.Wrapper} data-aos="fade-down">
+            <div className={classes.TopLine}>
+                <div>{t('header.text')}</div>
+                <img src={flagImg} alt="img"/>
+            </div>
             <div className="container">
                 <div className={classes.Inner}>
                     <div onClick={handleCloseMobileMenu}>

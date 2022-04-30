@@ -1,5 +1,8 @@
 {
     "translations": {
+        "header": {
+            "text": "На період воєнного стану знижка 50%"
+        },
         "menu": {
             "main": "Головна",
             "price": "Ціни",
@@ -36,6 +39,7 @@
             "contentItemText1": "Математика (алгебра, геометрія)",
             "contentItemText2": "Фізика",
             "contentItemSubtext": "300 грн/год",
+            "contentItemSubtext2": "150 грн/год",
             "button": "Хочу спробувати"
         },
         "teachers": {

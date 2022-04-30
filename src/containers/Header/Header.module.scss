@@ -1,3 +1,23 @@
+.TopLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 0;
+    background-color: #4797C8;
+    color: #fff;
+    font-size: 20px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
+    img {
+        max-width: 40px;
+        max-height: 15px;
+        margin-left: 10px;
+    }
+}
 .Wrapper {
     background-color: #F9FCFF;
     box-shadow: 0px 3px 3px hsl(207, 77%, 95%);

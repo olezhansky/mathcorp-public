@@ -1,5 +1,8 @@
 {
     "translations": {
+        "header": {
+            "text": "На период военного положения скидка 50%"
+        },
         "menu": {
             "main": "Главная",
             "price": "Цены",
@@ -35,7 +38,8 @@
             "text": "Выберите предмет, чтобы попробовать нашу методику обучения",
             "contentItemText1": "Математика (алгебра, геометрия)",
             "contentItemText2": "Физика",
-            "contentItemSubtext": "300 грн / час",
+            "contentItemSubtext": "300 грн/час",
+            "contentItemSubtext2": "150 грн/час",
             "button": "Хочу попробовать"
         },
         "teachers": {
