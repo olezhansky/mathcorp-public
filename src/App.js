@@ -42,9 +42,9 @@ function App() {
   }, [language])
 
   useEffect(() => {
-    const languageFornLocalStorage = localStorage.getItem('lang')
+    const languageFromLocalStorage = localStorage.getItem('lang')
     if (languageFornLocalStorage) {
-      dispatch(setLanguageFromLocalStorageAction(languageFornLocalStorage))
+      dispatch(setLanguageFromLocalStorageAction(languageFromLocalStorage))
     }
   }, [dispatch])
 
