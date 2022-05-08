@@ -17,7 +17,6 @@ import WrongOrientationScreen from './components/WrongOrientationScreen/WrongOri
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-
 function App() {
   const dispatch = useDispatch()
   const { language, modal, mobileMenu } = useSelector(
@@ -43,7 +42,7 @@ function App() {
 
   useEffect(() => {
     const languageFromLocalStorage = localStorage.getItem('lang')
-    if (languageFornLocalStorage) {
+    if (languageFromLocalStorage) {
       dispatch(setLanguageFromLocalStorageAction(languageFromLocalStorage))
     }
   }, [dispatch])
